@@ -3,7 +3,7 @@
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$db_name = 'test';
+$db_name = 'holiday_blog';
 
 $conn = new MySQLi($host, $user, $pass, $db_name);
 

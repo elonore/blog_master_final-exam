@@ -9,7 +9,7 @@
           TravelBlog is a student blog project created for learning purposes during my training as a web developer student.
         </p>
         <div class="contact">
-          <span><i class="fas fa-phone"></i> &nbsp; +44708 678 657</span>
+          <span><i class="fas fa-phone"></i> &nbsp; +44 708 2149-8777</span>
           <span><i class="fas fa-envelope"></i> &nbsp; contact@travelblog.com</span>
         </div>
         <div class="socials">
@@ -58,7 +58,7 @@
     </div>
 
     <div class="footer-bottom">
-    &copy; travelblog 2020 | All rights reserved
+    &copy; Travelblog 2020 | All rights reserved
     </div>
   </div>
   <!-- // footer -->

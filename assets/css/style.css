@@ -61,7 +61,7 @@ a {
 
 .btn:hover {
   color: white !important;
-  background: #006669;
+  background: #793802;
 }
 
 .text-input {
@@ -100,7 +100,7 @@ a {
 /* NAVBAR */
 
 header {
-  background: #793802;
+  background: #A88E77;
   height: 66px;
 }
 
@@ -163,7 +163,7 @@ header ul li ul li a.logout {
 }
 
 header ul li ul li a:hover {
-  background: #d5d6d6;
+  background-color: #d5d6d6;
 }
 
 header ul li a {
@@ -174,7 +174,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-  background: #006669;
+  background-color: #793802;
   transition: 0.5s;
 }
 
@@ -206,7 +206,7 @@ header .menu-toggle {
   top: 50%;
   right: 30px;
   font-size: 2em;
-  color: #006669;
+  color: #793802;
   cursor: pointer;
 }
 
@@ -215,7 +215,7 @@ header .menu-toggle {
   top: 50%;
   left: 30px;
   font-size: 2em;
-  color: #006669;
+  color: #793802;
   cursor: pointer;
 }
 
@@ -412,8 +412,9 @@ header .menu-toggle {
 /* FOOTER */
 
 .footer {
-  background: #D5D0CD;
-  color: black;
+  /* background: #D5D0CD; */
+  background-color: #433B31;
+  color: #ffffff;
   height: 400px;
   position: relative;
 }
@@ -458,7 +459,7 @@ header .menu-toggle {
 
 .footer .footer-content .about .socials a:hover {
   border: 1px solid white;
-  color: white;
+  color: #793802;
   transition: all 0.3s;
 }
 
@@ -476,8 +477,8 @@ header .menu-toggle {
 }
 
 .footer .footer-content .contact-form .contact-input {
-  background: #F6F6F6;
-  color: #bebdbd;
+  background: #A88E77;
+  color: white;
   margin-bottom: 10px;
   line-height: 1.5rem;
   padding: 0.9rem 1.4rem;
@@ -486,6 +487,7 @@ header .menu-toggle {
 
 .footer .footer-content .contact-form .contact-input:focus {
   background: #ffffff;
+  color: #bebdbd;
 }
 
 .footer .footer-content .contact-form .contact-btn {
@@ -497,7 +499,7 @@ header .menu-toggle {
 }
 
 .footer .footer-bottom {
-  background: #343a40;
+  background-color: #2F1F1A;
   color: #686868;
   height: 50px;
   width: 100%;
@@ -570,13 +572,17 @@ header .menu-toggle {
 
   header ul {
     width: 100%;
-    background: #0e94a0;
+    background-color: #793802;
     max-height: 0px;
     overflow: hidden;
   }
 
   .showing {
     max-height: 100em;
+  }
+
+  header ul:hover {
+    background-color: #A88E77;
   }
 
   header ul li {
@@ -591,13 +597,13 @@ header .menu-toggle {
 
   header ul li ul li a {
     padding: 10px;
-    background: #0e94a0;
+    background: #793802;
     color: white;
     padding-left: 50px;
   }
 
   header ul li ul li a:hover {
-    background: #006669;
+    background-color: #A88E77;
   }
 
   header ul li ul li a.logout {

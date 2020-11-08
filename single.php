@@ -69,14 +69,21 @@ $posts = selectAll('posts', ['published' => 1]);
         <div class="section popular">
           <h2 class="section-title">Popular</h2>
 
-          <?php foreach ($posts as $p): ?>
-            <div class="post clearfix">
-              <img src="<?php echo BASE_URL . '/assets/images/' . $p['image']; ?>" alt="">
-              <a href="#" class="title">
-                <h4><?php echo $p['title'] ?></h4>
-              </a>
+        <?php foreach ($posts as $post): ?>
+          <div class="post">
+            <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" alt="" class="slider-image">
+            <div class="post-info">
+              <h4><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h4>
+              <i class="far fa-calendar"> <?php echo date('F j, Y', strtotime($post['created_at'])); ?></i>
             </div>
-          <?php endforeach; ?>
+          </div>
+        <?php endforeach; ?>
+
+
+
+
+
+
           
 
         </div>
