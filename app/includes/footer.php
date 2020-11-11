@@ -24,8 +24,8 @@
         <h2>Quick Links</h2>
         <br>
         <ul>
-          <a href="#">
-            <li>Events</li>
+          <a href="#topics">
+            <li>Topics</li>
           </a>
           <a href="#">
             <li>Team</li>
@@ -33,7 +33,7 @@
           <a href="https://theadultchair.com/" target="_blank">
             <li>Mentors</li>
           </a>
-          <a href="#">
+          <a href="#post-slider">
             <li>Gallery</li>
           </a>
           <a href="terms-and-conditions.php">
@@ -43,7 +43,7 @@
       </div>
 
       <div class="footer-section contact-form">
-        <h2>Contact us</h2>
+        <h2 id="contact"><a href="#contact">Contact us</a></h2>
         <br>
         <form action="index.php" method="post">
           <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">

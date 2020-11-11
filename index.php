@@ -19,23 +19,20 @@ if (isset($_GET['t_id'])) {
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet"> 
-
-  <!-- Custom Styling -->
-  <link rel="stylesheet" href="assets/css/style.css">
-
-  <title>Travel Blog</title>
-</head>
+    <title>Travel Blog</title>
+  </head>
 
 <body>
 
@@ -49,7 +46,7 @@ if (isset($_GET['t_id'])) {
 
     <!-- Post Slider -->
     <div class="post-slider">
-      <h1 class="slider-title">Popular Posts</h1>
+      <h1 class="slider-title" id="post-slider"><a href="#post-slider">Popular Posts</a></h1>
         <i class="fas fa-chevron-left prev"></i>
         <i class="fas fa-chevron-right next"></i>
 
@@ -112,7 +109,7 @@ if (isset($_GET['t_id'])) {
 
 
         <div class="section topics">
-          <h2 class="section-title">Topics</h2>
+          <h2 class="section-title" id="topics"><a href="#topics">Topics</a></h2>
           <ul>
             <?php foreach ($topics as $key => $topic): ?>
               <li><a href="<?php echo BASE_URL . '/index.php?t_id=' . $topic['id'] . '&name=' . $topic['name'] ?>"><?php echo $topic['name']; ?></a></li>
@@ -129,7 +126,6 @@ if (isset($_GET['t_id'])) {
   <!-- // Page Wrapper -->
 
   <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
-
 
   <!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

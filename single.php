@@ -79,13 +79,6 @@ $posts = selectAll('posts', ['published' => 1]);
           </div>
         <?php endforeach; ?>
 
-
-
-
-
-
-          
-
         </div>
 
         <div class="section topics">
