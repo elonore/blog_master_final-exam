@@ -110,7 +110,7 @@ if (isset($_POST['update-post'])) {
     if (count($errors) == 0) {
         $id = $_POST['id'];
         unset($_POST['update-post'], $_POST['id']);
-        $_POST['user_id'] = $_SESSION['id'];
+        $_POST['user_id'] = htmlspecialchars($_SESSION['id']);
         $_POST['published'] = isset($_POST['published']) ? 1 : 0;
         $_POST['body'] = htmlentities($_POST['body']);
     
@@ -119,8 +119,8 @@ if (isset($_POST['update-post'])) {
         $_SESSION['type'] = "success";
         header("location: " . BASE_URL . "/admin/posts/index.php");       
     } else {
-        $title = $_POST['title'];
-        $body = $_POST['body'];
+        $title = htmlspecialchars($_POST['title']);
+        $body = htmlspecialchars($_POST['body']);
         $topic_id = htmlspecialchars($_POST['topic_id']);
         $published = isset($_POST['published']) ? 1 : 0;
     }

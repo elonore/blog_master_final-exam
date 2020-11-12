@@ -55,7 +55,7 @@ adminOnly();
                     <form action="create.php" method="post" enctype="multipart/form-data">
                         <div>
                             <label>Title</label>
-                            <input type="text" name="title" value="<?php echo $title ?>" class="text-input">
+                            <input type="text" name="title" value="<?php echo ($title) ?>" class="text-input">
                         </div>
                         <div>
                             <label>Body</label>

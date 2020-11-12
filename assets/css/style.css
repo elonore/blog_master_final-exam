@@ -509,6 +509,18 @@ header .menu-toggle {
   padding-top: 20px;
 }
 
+.form-error {
+  color: red;
+}
+
+.form-success {
+  color: green;
+}
+
+.input-error {
+  box-shadow: 0 0 5px red;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 934px) {

@@ -42,7 +42,7 @@ if (isset($_GET['id'])) {
 
 if (isset($_GET['del_id'])) {
     adminOnly();
-    $id = $_GET['del_id'];
+    $id = htmlspecialchars($_GET['del_id']);
     $count = delete($table, $id);
     $_SESSION['message'] = 'Topic deleted successfully';
     $_SESSION['type'] = 'success';
@@ -56,7 +56,7 @@ if (isset($_POST['update-topic'])) {
     $errors = validateTopic($_POST);
 
     if (count($errors) === 0) { 
-        $id = $_POST['id'];
+        $id = htmlspecialchars($_POST['id']);
         unset($_POST['update-topic'], $_POST['id']);
         $topic_id = update($table, $id, $_POST);
         $_SESSION['message'] = 'Topic updated successfully';

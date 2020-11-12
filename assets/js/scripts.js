@@ -73,3 +73,20 @@ ClassicEditor.create(document.querySelector("#body"), {
 }).catch(error => {
     console.log(error);
 });
+
+/* Ajax cocntact form */
+
+$(document).ready(function() {
+    $("#contact-form").submit-contact(function(event)  {
+        event.preventDefault();
+        var email = $("#mail-email").val();
+        var message = $("#mail-message").val();
+        var submit = $("#mail-submit").val();
+        $(".form-message").load("mail.php", {
+            email = email,
+            message = message,
+            submit = submit
+
+        })
+    });
+});

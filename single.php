@@ -67,13 +67,13 @@ $posts = selectAll('posts', ['published' => 1]);
 
 
         <div class="section popular">
-          <h2 class="section-title">Popular</h2>
+          <h2 class="section-title" id="post-slider"><a href="#post-slider">Popular</a></h2>
 
         <?php foreach ($posts as $post): ?>
           <div class="post">
             <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" alt="" class="slider-image">
             <div class="post-info">
-              <h4><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h4>
+              <h4><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo htmlspecialchars($post['title']); ?></a></h4>
               <i class="far fa-calendar"> <?php echo date('F j, Y', strtotime($post['created_at'])); ?></i>
             </div>
           </div>
@@ -82,7 +82,7 @@ $posts = selectAll('posts', ['published' => 1]);
         </div>
 
         <div class="section topics">
-          <h2 class="section-title">Topics</h2>
+          <h2 class="section-title" id="topics"><a href="#topics">Topics</a></h2>
           <ul>
             <?php foreach ($topics as $topic): ?>
               <li><a href="<?php echo BASE_URL . '/index.php?t_id=' . $topic['id'] . '&name=' . $topic['name'] ?>"><?php echo $topic['name']; ?></a></li>

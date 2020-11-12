@@ -45,13 +45,14 @@
       <div class="footer-section contact-form">
         <h2 id="contact"><a href="#contact">Contact us</a></h2>
         <br>
-        <form action="index.php" method="post">
-          <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
-          <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
-          <button type="submit" class="btn btn-big contact-btn">
+        <form action="mail.php" id="contact-form" method="post">
+          <input id="mail-email" type="text" name="email" class="text-input contact-input" placeholder="Your email address...">
+          <textarea rows="4" id="mail-message" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+          <button id="mail-submit" type="submit" name="submit-contact" class="btn btn-big contact-btn">
             <i class="fas fa-envelope"></i>
             Send
           </button>
+          <p class="form-message"></p>
         </form>
       </div>
 
