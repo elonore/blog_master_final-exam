@@ -4,7 +4,6 @@
 
       <div class="footer-section about">
       <h2 class="logo-text"><span>Holiday</span><i class="far fa-heart"></i>Inspirations</h2>
-        <!-- <img src="assets/images/logo_travelblog.png" alt="logo" width="25%", height="25%" /> -->
         <p>
           TravelBlog is a student blog project created for learning purposes during my training as a web developer student.
         </p>
@@ -27,9 +26,6 @@
           <a href="#topics">
             <li>Topics</li>
           </a>
-          <a href="#">
-            <li>Team</li>
-          </a>
           <a href="https://theadultchair.com/" target="_blank">
             <li>Mentors</li>
           </a>
@@ -48,7 +44,7 @@
         <form action="mail.php" id="contact-form" method="post">
           <input id="mail-email" type="text" name="email" class="text-input contact-input" placeholder="Your email address...">
           <textarea rows="4" id="mail-message" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
-          <button id="mail-submit" type="submit" name="submit-contact" class="btn btn-big contact-btn">
+          <button id="mail-submit" type="submit" name="submit" class="btn btn-big contact-btn">
             <i class="fas fa-envelope"></i>
             Send
           </button>

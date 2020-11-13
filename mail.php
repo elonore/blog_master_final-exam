@@ -1,6 +1,6 @@
 <?php 
 
-    if (isset($_POST['submit-contact'])) {
+    if (isset($_POST['submit'])) {
         $email = $_POST['email'];
         $message = $_POST['message'];
 
@@ -15,8 +15,8 @@
                 echo "<span class= 'form-error'>Write a valid email address!</span>";
                 $errorEmail = true;
             }
-            else {
-                echo "<span class= 'form-success'>Field in all fields!</span>";
+             else {
+                 echo "<span class= 'form-success'>Fill in all the fields!</span>";
             }
     }
             else {

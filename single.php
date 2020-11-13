@@ -65,7 +65,6 @@ $posts = selectAll('posts', ['published' => 1]);
                 <blockquote cite="https://www.facebook.com/wechoosetotravel" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/wechoosetotravel">𝘛𝘳𝘢𝘷𝘦𝘭</a></blockquote>
                 </div>
 
-
         <div class="section popular">
           <h2 class="section-title" id="post-slider"><a href="#post-slider">Popular</a></h2>
 

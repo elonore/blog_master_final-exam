@@ -1,7 +1,6 @@
 <header>
     <a href="<?php echo BASE_URL . '/index.php' ?>" class="logo">
         <h1 class="logo-text"><span>Holiday</span><i class="far fa-heart"></i>Inspirations</h1>
-        <!--<img src="assets/images/logo_travelblog.png" alt="logo" width="100%", height="100%" /> -->
     </a>
     <i class="fa fa-bars menu-toggle"></i>
     <ul class="nav">

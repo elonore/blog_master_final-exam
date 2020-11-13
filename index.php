@@ -23,6 +23,10 @@ if (isset($_GET['t_id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -135,6 +139,24 @@ if (isset($_GET['t_id'])) {
 
   <!-- Custom Script -->
   <script src="assets/js/scripts.js"></script>
+  /* Ajax contact form */
+<script>
+ $(document).ready(function() {
+    $("#contact-form").submit(function(event)  {
+        event.preventDefault();
+        var email = $("#mail-email").val();
+        var message = $("#mail-message").val();
+         var submit = $("#mail-submit").val();
+        $(".form-message").load("mail.php", {
+            email = email,
+             message = message,
+            submit = submit
+
+         })
+    });
+});
+</script>
+
 
 </body>
 

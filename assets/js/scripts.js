@@ -76,17 +76,17 @@ ClassicEditor.create(document.querySelector("#body"), {
 
 /* Ajax cocntact form */
 
-$(document).ready(function() {
-    $("#contact-form").submit-contact(function(event)  {
-        event.preventDefault();
-        var email = $("#mail-email").val();
-        var message = $("#mail-message").val();
-        var submit = $("#mail-submit").val();
-        $(".form-message").load("mail.php", {
-            email = email,
-            message = message,
-            submit = submit
+// $(document).ready(function() {
+//     $("#contact-form").submit(function(event)  {
+//         event.preventDefault();
+//         var email = $("#mail-email").val();
+//         var message = $("#mail-message").val();
+//         var submit = $("#mail-submit").val();
+//         $(".form-message").load("mail.php", {
+//             email = email,
+//             message = message,
+//             submit = submit
 
-        })
-    });
-});
+//         })
+//     });
+// });
