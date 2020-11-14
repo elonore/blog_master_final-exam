@@ -58,7 +58,7 @@ if (isset($_GET['t_id'])) {
 
         <?php foreach ($posts as $post): ?>
           <div class="post">
-            <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" alt="" class="slider-image">
+            <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" alt="slider image" class="slider-image">
             <div class="post-info">
               <h4><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h4>
               <i class="far fa-user"> <?php echo $post['username']; ?></i>
@@ -139,7 +139,7 @@ if (isset($_GET['t_id'])) {
 
   <!-- Custom Script -->
   <script src="assets/js/scripts.js"></script>
-  /* Ajax contact form */
+  <!--Ajax contact form -->
 <script>
  $(document).ready(function() {
     $("#contact-form").submit(function(event)  {

@@ -76,3 +76,11 @@ td {
 form div {
 	margin-bottom: 15px;
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 934px) {
+		.admin-content div {
+			
+	
+}
