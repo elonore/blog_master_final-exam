@@ -102,6 +102,7 @@ a {
 header {
   background: #A88E77;
   height: 66px;
+  z-index: 1;
 }
 
 header * {
