@@ -131,18 +131,30 @@ function delete($table, $id)
 function getPublishedPosts()
 {
     global $conn;
-    $sql = "SELECT p.*, u.username FROM posts AS p JOIN users AS u ON p.user_id=u.id WHERE p.published=?";
+    $sql = "SELECT p.*, u.username FROM posts AS p JOIN users AS u ON p.user_id=u.id WHERE p.published=? ORDER BY p.created_at DESC ";
 
     $stmt = executeQuery($sql, ['published' => 1]);
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     return $records;
 }
 
+function get_posts_with_username()
+{
+    global $conn;
+    $sql = "SELECT p.*, u.username FROM posts AS p JOIN users AS u ON p.user_id=u.id ORDER BY p.created_at DESC ";
+    
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+    return $records;
+
+}
+
 
 function getPostsByTopicId($topic_id)
 {
     global $conn;
-    $sql = "SELECT p.*, u.username FROM posts AS p JOIN users AS u ON p.user_id=u.id WHERE p.published=? AND topic_id=?";
+    $sql = "SELECT p.*, u.username FROM posts AS p JOIN users AS u ON p.user_id=u.id WHERE p.published=?  AND topic_id=? ORDER BY p.created_at DESC";
 
     $stmt = executeQuery($sql, ['published' => 1, 'topic_id' => $topic_id]);
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
@@ -161,7 +173,7 @@ function searchPosts($term)
             JOIN users AS u 
             ON p.user_id=u.id 
             WHERE p.published=?
-            AND p.title LIKE ? OR p.body LIKE ?";
+            AND p.title LIKE ? OR p.body LIKE ? ORDER BY p.created_at DESC";
 
 
     $stmt = executeQuery($sql, ['published' => 1, 'title' => $match, 'body' => $match]);
