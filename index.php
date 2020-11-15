@@ -148,9 +148,9 @@ if (isset($_GET['t_id'])) {
         var message = $("#mail-message").val();
          var submit = $("#mail-submit").val();
         $(".form-message").load("mail.php", {
-            email = email,
-             message = message,
-            submit = submit
+            email : email,
+             message : message,
+            submit : submit
 
          })
     });

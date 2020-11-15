@@ -16,7 +16,7 @@
                 $errorEmail = true;
             }
              else {
-                 echo "<span class= 'form-success'>Fill in all the fields!</span>";
+                 echo "<span class= 'form-success'>Email sent! </span>";
             }
     }
             else {
@@ -28,7 +28,7 @@
     $("#mail-email", "#mail-message").removeClass("input-error");
 
     var errorEmpty = "<?php echo $errorEmpty ?>";
-    var errorEmail = "<?php echo $errorEmail ?>";
+    var emailEmail = "<?php echo $errorEmail ?>";
 
     if (errorEmpty == true) {
         $("#mail-email", "#mail-message").addClass("input-error");
