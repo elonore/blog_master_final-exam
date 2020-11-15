@@ -29,13 +29,6 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
@@ -80,20 +73,3 @@ ClassicEditor.create(document.querySelector("#body"), {
 }).catch(error => {
     console.log(error);
 });
-
-/* Ajax cocntact form */
-
-// $(document).ready(function() {
-//     $("#contact-form").submit(function(event)  {
-//         event.preventDefault();
-//         var email = $("#mail-email").val();
-//         var message = $("#mail-message").val();
-//         var submit = $("#mail-submit").val();
-//         $(".form-message").load("mail.php", {
-//             email = email,
-//             message = message,
-//             submit = submit
-
-//         })
-//     });
-// });
