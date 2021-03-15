@@ -20,7 +20,7 @@
             }
     }
             else {
-                echo "<span class= 'form-success'>There was an error!</span>";
+                echo "<span class= 'form-error'>There was an error!</span>";
         } 
 ?>
 

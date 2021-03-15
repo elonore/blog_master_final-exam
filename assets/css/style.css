@@ -48,6 +48,8 @@ a {
   padding: 0.5rem 1rem;
   background: #7D70BA;
   color: white;
+  text-align: center;
+  width: 50%;
   border: 1px solid transparent;
   border-radius: 0.25rem;
   font-size: 1.08em;
@@ -188,7 +190,7 @@ header .menu-toggle {
 }
 
 .page-wrapper a:hover {
-  color: #006669;
+  color: #A88E77;
 }
 
 /* POST SLIDER */
